@@ -1,0 +1,27 @@
+/* Put your css in here */
+
+input.crs-date-formatter {
+    position: relative;
+    width: 150px; height: 20px;
+    color: transparent;
+}
+
+input.crs-date-formatter:before {
+    position: absolute;
+    top: 3px; left: 3px;
+    content: attr(data-date);
+    display: inline-block;
+    color: black;
+}
+
+input.crs-date-formatter::-webkit-datetime-edit, input::-webkit-inner-spin-button, input::-webkit-clear-button {
+    display: none;
+}
+
+input.crs-date-formatter::-webkit-calendar-picker-indicator {
+    position: absolute;
+    top: 3px;
+    right: 0;
+    color: black;
+    opacity: 1;
+}
